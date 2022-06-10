@@ -1,0 +1,28 @@
+<nav class="">
+    <div class="container">
+        <a class="navbar-brand" href="/">NodeStream</a>
+        <button class="" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"/>
+        </button>
+
+        <div class="" id="navbarSupportedContent">
+            <ul class="">
+                <% if (!user) { %>
+                    <li class="">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+
+                    <li class="">
+                        <a class="nav-link" href="/register">Register</a>
+                    </li>
+                <% } else { %>
+                <li class="">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
